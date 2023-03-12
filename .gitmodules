@@ -1,0 +1,3 @@
+[submodule "c_src/libmpsse"]
+	path = c_src/libmpsse
+	url = https://github.com/l29ah/libmpsse
