@@ -21,7 +21,7 @@ defmodule MPSSE do
 
   alias MPSSE.NIF
 
-  @spec find_and_open(mode(), speed(), endian()) :: {:ok, reference()}
+  @spec find_and_open(mode(), speed() | nil, endian() | nil) :: {:ok, reference()}
   def find_and_open(mode, speed \\ nil, endian \\ nil) do
     NIF.open(mode(mode), speed(mode, speed), endian(mode, endian))
   end
